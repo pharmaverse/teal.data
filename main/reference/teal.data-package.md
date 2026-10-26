@@ -9,12 +9,11 @@ another data sources.
 
 Useful links:
 
-- <https://insightsengineering.github.io/teal.data/>
+- <https://pharmaverse.github.io/teal.data/>
 
-- <https://github.com/insightsengineering/teal.data/>
+- <https://github.com/pharmaverse/teal.data/>
 
-- Report bugs at
-  <https://github.com/insightsengineering/teal.data/issues>
+- Report bugs at <https://github.com/pharmaverse/teal.data/issues>
 
 ## Author
 

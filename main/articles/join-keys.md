@@ -21,11 +21,11 @@ to select specific datasets.
 
 The primary function of the `join_keys` class in `teal` applications is
 to facilitate the seamless [merging of
-datasets](https://insightsengineering.github.io/teal.transform/latest-tag/articles/data-merge.html)
+datasets](https://pharmaverse.github.io/teal.transform/latest-tag/articles/data-merge.html)
 using `teal.transform`.
 
 Additionally, it plays a role in the data filtering using the *[Filter
-Panel](https://insightsengineering.github.io/teal/latest-tag/articles/filter-panel.html)*
+Panel](https://pharmaverse.github.io/teal/latest-tag/articles/filter-panel.html)*
 in a `teal` application. The filters applied to a (parent) dataset are
 also applied to their children.
 
@@ -77,14 +77,14 @@ By default, the new joining key will set the `dataset_1` as the parent.
 ##### Example & Output
 
 \
-[`library`](https://rdrr.io/r/base/library.html)`(`[`teal.data`](https://insightsengineering.github.io/teal.data/)`)`\
-`jk`` ``<-`` `[`join_keys`](https://insightsengineering.github.io/teal.data/reference/join_keys.md)`(`\
-`  `[`join_key`](https://insightsengineering.github.io/teal.data/reference/join_key.md)`(``"ds1"``, keys ``=`` ``"col_1"``)``, ``# ds1: [col_1]`\
-`  `[`join_key`](https://insightsengineering.github.io/teal.data/reference/join_key.md)`(``"ds2"``, keys ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``"col_1"``, ``"col_2"``)``)``, ``# ds2: [col_1, col_2]`\
-`  `[`join_key`](https://insightsengineering.github.io/teal.data/reference/join_key.md)`(``"ds3"``, keys ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``"col_1"``, ``"col_3"``)``)``, ``# ds3: [col_1, col_3]`\
-`  `[`join_key`](https://insightsengineering.github.io/teal.data/reference/join_key.md)`(``"ds1"``, ``"ds2"``, keys ``=`` ``"col_1"``)``, ``# ds1 <-- ds2`\
-`  `[`join_key`](https://insightsengineering.github.io/teal.data/reference/join_key.md)`(``"ds1"``, ``"ds3"``, keys ``=`` ``"col_1"``)``, ``# ds1 <-- ds3`\
-`  `[`join_key`](https://insightsengineering.github.io/teal.data/reference/join_key.md)`(``"ds4"``, ``"ds5"``, keys ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``"col_4"`` ``=`` ``"col_5"``)``, directed ``=`` ``FALSE``)`` ``# ds4 <--> ds5`\
+[`library`](https://rdrr.io/r/base/library.html)`(`[`teal.data`](https://pharmaverse.github.io/teal.data/)`)`\
+`jk`` ``<-`` `[`join_keys`](https://pharmaverse.github.io/teal.data/reference/join_keys.md)`(`\
+`  `[`join_key`](https://pharmaverse.github.io/teal.data/reference/join_key.md)`(``"ds1"``, keys ``=`` ``"col_1"``)``, ``# ds1: [col_1]`\
+`  `[`join_key`](https://pharmaverse.github.io/teal.data/reference/join_key.md)`(``"ds2"``, keys ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``"col_1"``, ``"col_2"``)``)``, ``# ds2: [col_1, col_2]`\
+`  `[`join_key`](https://pharmaverse.github.io/teal.data/reference/join_key.md)`(``"ds3"``, keys ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``"col_1"``, ``"col_3"``)``)``, ``# ds3: [col_1, col_3]`\
+`  `[`join_key`](https://pharmaverse.github.io/teal.data/reference/join_key.md)`(``"ds1"``, ``"ds2"``, keys ``=`` ``"col_1"``)``, ``# ds1 <-- ds2`\
+`  `[`join_key`](https://pharmaverse.github.io/teal.data/reference/join_key.md)`(``"ds1"``, ``"ds3"``, keys ``=`` ``"col_1"``)``, ``# ds1 <-- ds3`\
+`  `[`join_key`](https://pharmaverse.github.io/teal.data/reference/join_key.md)`(``"ds4"``, ``"ds5"``, keys ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``"col_4"`` ``=`` ``"col_5"``)``, directed ``=`` ``FALSE``)`` ``# ds4 <--> ds5`\
 `)`\
 \
 `# The parent-child relationships are created automatically (unless 'parent' parameter is "none")`\
@@ -210,8 +210,8 @@ objects created through the `join_key` function. These objects can be
 provided as the initial argument or in any other position as needed.
 
 \
-`jk1`` ``<-`` `[`join_keys`](https://insightsengineering.github.io/teal.data/reference/join_keys.md)`(`[`join_key`](https://insightsengineering.github.io/teal.data/reference/join_key.md)`(``"ds1"``, ``"ds1"``, ``"col_1"``)``)`\
-`jk2`` ``<-`` `[`join_keys`](https://insightsengineering.github.io/teal.data/reference/join_keys.md)`(`[`join_key`](https://insightsengineering.github.io/teal.data/reference/join_key.md)`(``"ds2"``, ``"ds2"``, ``"col_1"``)``, `[`join_key`](https://insightsengineering.github.io/teal.data/reference/join_key.md)`(``"ds1"``, ``"ds2"``, ``"col_1"``)``)`\
+`jk1`` ``<-`` `[`join_keys`](https://pharmaverse.github.io/teal.data/reference/join_keys.md)`(`[`join_key`](https://pharmaverse.github.io/teal.data/reference/join_key.md)`(``"ds1"``, ``"ds1"``, ``"col_1"``)``)`\
+`jk2`` ``<-`` `[`join_keys`](https://pharmaverse.github.io/teal.data/reference/join_keys.md)`(`[`join_key`](https://pharmaverse.github.io/teal.data/reference/join_key.md)`(``"ds2"``, ``"ds2"``, ``"col_1"``)``, `[`join_key`](https://pharmaverse.github.io/teal.data/reference/join_key.md)`(``"ds1"``, ``"ds2"``, ``"col_1"``)``)`\
 \
 `# Merging`\
 [`c`](https://rdrr.io/r/base/c.html)`(``jk1``, ``jk2``)`
@@ -224,7 +224,7 @@ provided as the initial argument or in any other position as needed.
 
 \
 `# Keeping last occurence`\
-[`c`](https://rdrr.io/r/base/c.html)`(``jk1``, ``jk2``, `[`join_keys`](https://insightsengineering.github.io/teal.data/reference/join_keys.md)`(`[`join_key`](https://insightsengineering.github.io/teal.data/reference/join_key.md)`(``"ds2"``, ``"ds2"``, ``"col_2"``)``, `[`join_key`](https://insightsengineering.github.io/teal.data/reference/join_key.md)`(``"ds1"``, ``"ds2"``, `[`c`](https://rdrr.io/r/base/c.html)`(``"col_1"`` ``=`` ``"col_2"``)``)``)``)`
+[`c`](https://rdrr.io/r/base/c.html)`(``jk1``, ``jk2``, `[`join_keys`](https://pharmaverse.github.io/teal.data/reference/join_keys.md)`(`[`join_key`](https://pharmaverse.github.io/teal.data/reference/join_key.md)`(``"ds2"``, ``"ds2"``, ``"col_2"``)``, `[`join_key`](https://pharmaverse.github.io/teal.data/reference/join_key.md)`(``"ds1"``, ``"ds2"``, `[`c`](https://rdrr.io/r/base/c.html)`(``"col_1"`` ``=`` ``"col_2"``)``)``)``)`
 
     ## A join_keys object containing foreign keys between 2 datasets:
     ## ds1: [col_1]
@@ -234,7 +234,7 @@ provided as the initial argument or in any other position as needed.
 
 \
 `# Merges join_key and join_key_set objects (from join_key function)`\
-[`c`](https://rdrr.io/r/base/c.html)`(``jk1``, `[`join_key`](https://insightsengineering.github.io/teal.data/reference/join_key.md)`(``"ds3"``, ``"ds3"``, ``"col_3"``)``)`
+[`c`](https://rdrr.io/r/base/c.html)`(``jk1``, `[`join_key`](https://pharmaverse.github.io/teal.data/reference/join_key.md)`(``"ds3"``, ``"ds3"``, ``"col_3"``)``)`
 
     ## A join_keys object containing foreign keys between 2 datasets:
     ## ds1: [col_1]
@@ -261,16 +261,16 @@ column(s) of the dataset that (together) uniquely identify rows in the
 dataset.
 
 \
-[`library`](https://rdrr.io/r/base/library.html)`(`[`teal.data`](https://insightsengineering.github.io/teal.data/)`)`\
+[`library`](https://rdrr.io/r/base/library.html)`(`[`teal.data`](https://pharmaverse.github.io/teal.data/)`)`\
 \
 `td_pk`` ``<-`` `[`within`](https://rdrr.io/r/base/with.html)`(`\
-`  `[`teal_data`](https://insightsengineering.github.io/teal.data/reference/teal_data.md)`(``)``,`\
+`  `[`teal_data`](https://pharmaverse.github.io/teal.data/reference/teal_data.md)`(``)``,`\
 `  ``ds1`` ``<-`` `[`transform`](https://rdrr.io/r/base/transform.html)`(``iris``, id ``=`` `[`seq_len`](https://rdrr.io/r/base/seq.html)`(`[`nrow`](https://rdrr.io/r/base/nrow.html)`(``iris``)``)``)`\
 `)`\
 \
-[`join_keys`](https://insightsengineering.github.io/teal.data/reference/join_keys.md)`(``td_pk``)`` ``<-`` `[`join_keys`](https://insightsengineering.github.io/teal.data/reference/join_keys.md)`(`[`join_key`](https://insightsengineering.github.io/teal.data/reference/join_key.md)`(``"ds1"``, keys ``=`` ``"id"``)``)`\
+[`join_keys`](https://pharmaverse.github.io/teal.data/reference/join_keys.md)`(``td_pk``)`` ``<-`` `[`join_keys`](https://pharmaverse.github.io/teal.data/reference/join_keys.md)`(`[`join_key`](https://pharmaverse.github.io/teal.data/reference/join_key.md)`(``"ds1"``, keys ``=`` ``"id"``)``)`\
 \
-[`join_keys`](https://insightsengineering.github.io/teal.data/reference/join_keys.md)`(``td_pk``)`
+[`join_keys`](https://pharmaverse.github.io/teal.data/reference/join_keys.md)`(``td_pk``)`
 
     ## A join_keys object containing foreign keys between 1 datasets:
     ## ds1: [id]
@@ -287,10 +287,10 @@ datasets:
 `  ``}`\
 `)`\
 \
-[`join_keys`](https://insightsengineering.github.io/teal.data/reference/join_keys.md)`(``td_pk``)``[``"ds2"``, ``"ds2"``]`` ``<-`` `[`c`](https://rdrr.io/r/base/c.html)`(``"V"``, ``"W"``)`\
-[`join_keys`](https://insightsengineering.github.io/teal.data/reference/join_keys.md)`(``td_pk``)``[``"ds3"``, ``"ds3"``]`` ``<-`` `[`c`](https://rdrr.io/r/base/c.html)`(``"V"``, ``"W"``)`\
+[`join_keys`](https://pharmaverse.github.io/teal.data/reference/join_keys.md)`(``td_pk``)``[``"ds2"``, ``"ds2"``]`` ``<-`` `[`c`](https://rdrr.io/r/base/c.html)`(``"V"``, ``"W"``)`\
+[`join_keys`](https://pharmaverse.github.io/teal.data/reference/join_keys.md)`(``td_pk``)``[``"ds3"``, ``"ds3"``]`` ``<-`` `[`c`](https://rdrr.io/r/base/c.html)`(``"V"``, ``"W"``)`\
 \
-[`join_keys`](https://insightsengineering.github.io/teal.data/reference/join_keys.md)`(``td_pk``)`
+[`join_keys`](https://pharmaverse.github.io/teal.data/reference/join_keys.md)`(``td_pk``)`
 
     ## A join_keys object containing foreign keys between 3 datasets:
     ## ds1: [id]
@@ -310,10 +310,10 @@ present in the table.
 For example:
 
 \
-[`library`](https://rdrr.io/r/base/library.html)`(`[`teal.data`](https://insightsengineering.github.io/teal.data/)`)`\
+[`library`](https://rdrr.io/r/base/library.html)`(`[`teal.data`](https://pharmaverse.github.io/teal.data/)`)`\
 \
 `td_fk`` ``<-`` `[`within`](https://rdrr.io/r/base/with.html)`(`\
-`  `[`teal_data`](https://insightsengineering.github.io/teal.data/reference/teal_data.md)`(``)``,`\
+`  `[`teal_data`](https://pharmaverse.github.io/teal.data/reference/teal_data.md)`(``)``,`\
 `  ``{`\
 `    ``ds1`` ``<-`` `[`data.frame`](https://rdrr.io/r/base/data.frame.html)`(``X ``=`` ``1``:``10``, Y ``=`` ``21``:``30``, Z ``=`` ``1``:``10``)`\
 `    ``ds2`` ``<-`` `[`data.frame`](https://rdrr.io/r/base/data.frame.html)`(``W ``=`` ``10``:``1``, V ``=`` ``5``:``14``, M ``=`` `[`rep`](https://rdrr.io/r/base/rep.html)`(``1``:``5``, ``2``)``)`\
@@ -321,17 +321,17 @@ For example:
 `  ``}`\
 `)`\
 \
-[`join_keys`](https://insightsengineering.github.io/teal.data/reference/join_keys.md)`(``td_fk``)`` ``<-`` `[`join_keys`](https://insightsengineering.github.io/teal.data/reference/join_keys.md)`(`\
+[`join_keys`](https://pharmaverse.github.io/teal.data/reference/join_keys.md)`(``td_fk``)`` ``<-`` `[`join_keys`](https://pharmaverse.github.io/teal.data/reference/join_keys.md)`(`\
 `  ``# Primary keys`\
-`  `[`join_key`](https://insightsengineering.github.io/teal.data/reference/join_key.md)`(``"ds1"``, keys ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``"X"``)``)``,`\
-`  `[`join_key`](https://insightsengineering.github.io/teal.data/reference/join_key.md)`(``"ds2"``, keys ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``"V"``, ``"W"``)``)``,`\
-`  `[`join_key`](https://insightsengineering.github.io/teal.data/reference/join_key.md)`(``"ds3"``, keys ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``"V"``)``)``,`\
+`  `[`join_key`](https://pharmaverse.github.io/teal.data/reference/join_key.md)`(``"ds1"``, keys ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``"X"``)``)``,`\
+`  `[`join_key`](https://pharmaverse.github.io/teal.data/reference/join_key.md)`(``"ds2"``, keys ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``"V"``, ``"W"``)``)``,`\
+`  `[`join_key`](https://pharmaverse.github.io/teal.data/reference/join_key.md)`(``"ds3"``, keys ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``"V"``)``)``,`\
 `  ``# Foreign keys`\
-`  `[`join_key`](https://insightsengineering.github.io/teal.data/reference/join_key.md)`(``"ds1"``, ``"ds2"``, `[`c`](https://rdrr.io/r/base/c.html)`(``"X"`` ``=`` ``"W"``)``)``,`\
-`  `[`join_key`](https://insightsengineering.github.io/teal.data/reference/join_key.md)`(``"ds2"``, ``"ds3"``, `[`c`](https://rdrr.io/r/base/c.html)`(``"V"`` ``=`` ``"V"``)``)`\
+`  `[`join_key`](https://pharmaverse.github.io/teal.data/reference/join_key.md)`(``"ds1"``, ``"ds2"``, `[`c`](https://rdrr.io/r/base/c.html)`(``"X"`` ``=`` ``"W"``)``)``,`\
+`  `[`join_key`](https://pharmaverse.github.io/teal.data/reference/join_key.md)`(``"ds2"``, ``"ds3"``, `[`c`](https://rdrr.io/r/base/c.html)`(``"V"`` ``=`` ``"V"``)``)`\
 `)`\
 \
-[`join_keys`](https://insightsengineering.github.io/teal.data/reference/join_keys.md)`(``td_fk``)`
+[`join_keys`](https://pharmaverse.github.io/teal.data/reference/join_keys.md)`(``td_fk``)`
 
     ## A join_keys object containing foreign keys between 3 datasets:
     ## ds1: [X]
@@ -356,10 +356,10 @@ These implicit relationships can be used to merge 2 datasets together,
 just as if they were defined manually.
 
 \
-[`library`](https://rdrr.io/r/base/library.html)`(`[`teal.data`](https://insightsengineering.github.io/teal.data/)`)`\
+[`library`](https://rdrr.io/r/base/library.html)`(`[`teal.data`](https://pharmaverse.github.io/teal.data/)`)`\
 \
 `td`` ``<-`` `[`within`](https://rdrr.io/r/base/with.html)`(`\
-`  `[`teal_data`](https://insightsengineering.github.io/teal.data/reference/teal_data.md)`(``)``,`\
+`  `[`teal_data`](https://pharmaverse.github.io/teal.data/reference/teal_data.md)`(``)``,`\
 `  ``{`\
 `    ``ds1`` ``<-`` `[`data.frame`](https://rdrr.io/r/base/data.frame.html)`(``X ``=`` ``1``:``10``, Y ``=`` ``21``:``30``, Z ``=`` ``1``:``10``)`\
 `    ``ds2`` ``<-`` `[`data.frame`](https://rdrr.io/r/base/data.frame.html)`(``W ``=`` ``10``:``1``, V ``=`` ``5``:``14``, M ``=`` `[`rep`](https://rdrr.io/r/base/rep.html)`(``1``:``5``, ``2``)``)`\
@@ -368,19 +368,19 @@ just as if they were defined manually.
 `  ``}`\
 `)`\
 \
-[`join_keys`](https://insightsengineering.github.io/teal.data/reference/join_keys.md)`(``td``)`` ``<-`` `[`join_keys`](https://insightsengineering.github.io/teal.data/reference/join_keys.md)`(`\
+[`join_keys`](https://pharmaverse.github.io/teal.data/reference/join_keys.md)`(``td``)`` ``<-`` `[`join_keys`](https://pharmaverse.github.io/teal.data/reference/join_keys.md)`(`\
 `  ``# Primary keys`\
-`  `[`join_key`](https://insightsengineering.github.io/teal.data/reference/join_key.md)`(``"ds1"``, keys ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``"X"``)``)``,`\
-`  `[`join_key`](https://insightsengineering.github.io/teal.data/reference/join_key.md)`(``"ds2"``, keys ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``"V"``, ``"W"``)``)``,`\
-`  `[`join_key`](https://insightsengineering.github.io/teal.data/reference/join_key.md)`(``"ds3"``, keys ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``"V"``)``)``,`\
-`  `[`join_key`](https://insightsengineering.github.io/teal.data/reference/join_key.md)`(``"ds4"``, keys ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``"V"``)``)``,`\
+`  `[`join_key`](https://pharmaverse.github.io/teal.data/reference/join_key.md)`(``"ds1"``, keys ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``"X"``)``)``,`\
+`  `[`join_key`](https://pharmaverse.github.io/teal.data/reference/join_key.md)`(``"ds2"``, keys ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``"V"``, ``"W"``)``)``,`\
+`  `[`join_key`](https://pharmaverse.github.io/teal.data/reference/join_key.md)`(``"ds3"``, keys ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``"V"``)``)``,`\
+`  `[`join_key`](https://pharmaverse.github.io/teal.data/reference/join_key.md)`(``"ds4"``, keys ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``"V"``)``)``,`\
 `  ``# Foreign keys`\
-`  `[`join_key`](https://insightsengineering.github.io/teal.data/reference/join_key.md)`(``"ds1"``, ``"ds2"``, `[`c`](https://rdrr.io/r/base/c.html)`(``"X"`` ``=`` ``"W"``)``)``,`\
-`  `[`join_key`](https://insightsengineering.github.io/teal.data/reference/join_key.md)`(``"ds2"``, ``"ds3"``, `[`c`](https://rdrr.io/r/base/c.html)`(``"V"`` ``=`` ``"V"``)``)``,`\
-`  `[`join_key`](https://insightsengineering.github.io/teal.data/reference/join_key.md)`(``"ds1"``, ``"ds4"``, `[`c`](https://rdrr.io/r/base/c.html)`(``"X"`` ``=`` ``"B"``)``)`\
+`  `[`join_key`](https://pharmaverse.github.io/teal.data/reference/join_key.md)`(``"ds1"``, ``"ds2"``, `[`c`](https://rdrr.io/r/base/c.html)`(``"X"`` ``=`` ``"W"``)``)``,`\
+`  `[`join_key`](https://pharmaverse.github.io/teal.data/reference/join_key.md)`(``"ds2"``, ``"ds3"``, `[`c`](https://rdrr.io/r/base/c.html)`(``"V"`` ``=`` ``"V"``)``)``,`\
+`  `[`join_key`](https://pharmaverse.github.io/teal.data/reference/join_key.md)`(``"ds1"``, ``"ds4"``, `[`c`](https://rdrr.io/r/base/c.html)`(``"X"`` ``=`` ``"B"``)``)`\
 `)`\
 \
-[`join_keys`](https://insightsengineering.github.io/teal.data/reference/join_keys.md)`(``td``)`
+[`join_keys`](https://pharmaverse.github.io/teal.data/reference/join_keys.md)`(``td``)`
 
     ## A join_keys object containing foreign keys between 4 datasets:
     ## ds1: [X]
@@ -397,7 +397,7 @@ just as if they were defined manually.
     ##   --* (implicit via parent with): ds2
 
 \
-[`join_keys`](https://insightsengineering.github.io/teal.data/reference/join_keys.md)`(``td``)``[``"ds2"``, ``"ds4"``]`
+[`join_keys`](https://pharmaverse.github.io/teal.data/reference/join_keys.md)`(``td``)``[``"ds2"``, ``"ds4"``]`
 
     ##   W 
     ## "B"

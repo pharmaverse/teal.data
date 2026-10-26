@@ -31,7 +31,7 @@ x[names]
   may not be reproducible
 
   Use
-  [`verify()`](https://insightsengineering.github.io/teal.data/reference/verify.md)
+  [`verify()`](https://pharmaverse.github.io/teal.data/reference/verify.md)
   to verify code reproducibility.
 
 - x:
@@ -50,8 +50,8 @@ A `teal_data` object.
 
 A `teal_data` is meant to be used for reproducibility purposes. The
 class inherits from
-[`teal.code::qenv`](https://insightsengineering.github.io/teal.code/latest-tag/reference/qenv.html)
-and we encourage to get familiar with
+[`teal.code::qenv`](https://rdrr.io/pkg/teal.code/man/qenv.html) and we
+encourage to get familiar with
 [teal.code](https://CRAN.R-project.org/package=teal.code) first.
 `teal_data` has following characteristics:
 
@@ -65,22 +65,22 @@ and we encourage to get familiar with
 
 - `teal_data` is a locked environment, and data modification is only
   possible through the
-  [`teal.code::eval_code()`](https://insightsengineering.github.io/teal.code/latest-tag/reference/eval_code.html)
+  [`teal.code::eval_code()`](https://rdrr.io/pkg/teal.code/man/eval_code.html)
   and
-  [`within.qenv()`](https://insightsengineering.github.io/teal.code/latest-tag/reference/within.qenv.html)
+  [`within.qenv()`](https://rdrr.io/pkg/teal.code/man/within.qenv.html)
   functions.
 
 - It stores metadata about the code used to create the data (see
-  [`get_code()`](https://insightsengineering.github.io/teal.data/reference/get_code.md)).
+  [`get_code()`](https://pharmaverse.github.io/teal.data/reference/get_code.md)).
 
 - It supports slicing (see
-  [`teal.code::subset-qenv`](https://insightsengineering.github.io/teal.code/latest-tag/reference/subset-qenv.html))
+  [`teal.code::subset-qenv`](https://rdrr.io/pkg/teal.code/man/subset-qenv.html))
 
 - Is immutable which means that each code evaluation does not modify the
   original `teal_data` environment directly.
 
 - It maintains information about relationships between datasets (see
-  [`join_keys()`](https://insightsengineering.github.io/teal.data/reference/join_keys.md)).
+  [`join_keys()`](https://pharmaverse.github.io/teal.data/reference/join_keys.md)).
 
 ## Subsetting
 
@@ -89,17 +89,17 @@ to the necessary needed to build limited objects.
 
 ## See also
 
-[`teal.code::eval_code`](https://insightsengineering.github.io/teal.code/latest-tag/reference/eval_code.html),
-[`get_code()`](https://insightsengineering.github.io/teal.data/reference/get_code.md),
-[`join_keys()`](https://insightsengineering.github.io/teal.data/reference/join_keys.md),
-[`names.teal_data()`](https://insightsengineering.github.io/teal.data/reference/names.teal_data.md)
+[`teal.code::eval_code`](https://rdrr.io/pkg/teal.code/man/eval_code.html),
+[`get_code()`](https://pharmaverse.github.io/teal.data/reference/get_code.md),
+[`join_keys()`](https://pharmaverse.github.io/teal.data/reference/join_keys.md),
+[`names.teal_data()`](https://pharmaverse.github.io/teal.data/reference/names.teal_data.md)
 
 ## Examples
 
 ``` r
 teal_data(x1 = iris, x2 = mtcars)
 #> ✖ code unverified
-#> <environment: 0x5594551c8d70> 🔒 
+#> <environment: 0x557fbd88b1f8> 🔒 
 #> Parent: <environment: devtools_shims> 
 #> Bindings:
 #> - x1: [data.frame]
@@ -111,13 +111,13 @@ data <- teal_data()
 data <- eval_code(data, "a <- 1;b<-2")
 data["a"]
 #> ✅︎ code verified
-#> <environment: 0x55945908f3b0> 🔒 
+#> <environment: 0x557fbeb46cf8> 🔒 
 #> Parent: <environment: devtools_shims> 
 #> Bindings:
 #> - a: [numeric]
 data[c("a", "b")]
 #> ✅︎ code verified
-#> <environment: 0x5594592dc1e0> 🔒 
+#> <environment: 0x557fbfcd5958> 🔒 
 #> Parent: <environment: devtools_shims> 
 #> Bindings:
 #> - a: [numeric]

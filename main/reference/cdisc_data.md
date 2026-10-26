@@ -1,7 +1,7 @@
 # Data input for `teal` app
 
 Function is a wrapper around
-[`teal_data()`](https://insightsengineering.github.io/teal.data/reference/teal_data.md)
+[`teal_data()`](https://pharmaverse.github.io/teal.data/reference/teal_data.md)
 and guesses `join_keys` for given datasets whose names match ADAM
 datasets names.
 
@@ -36,7 +36,7 @@ cdisc_data(
   may not be reproducible
 
   Use
-  [`verify()`](https://insightsengineering.github.io/teal.data/reference/verify.md)
+  [`verify()`](https://pharmaverse.github.io/teal.data/reference/verify.md)
   to verify code reproducibility.
 
 ## Value

@@ -38,13 +38,13 @@ object. Also, when retrieving code, unverified objects add a warning to
 the code stating that it has not passed verification.
 
 \
-[`library`](https://rdrr.io/r/base/library.html)`(`[`teal.data`](https://insightsengineering.github.io/teal.data/)`)`\
+[`library`](https://rdrr.io/r/base/library.html)`(`[`teal.data`](https://pharmaverse.github.io/teal.data/)`)`\
 \
-`data_empty`` ``<-`` `[`teal_data`](https://insightsengineering.github.io/teal.data/reference/teal_data.md)`(``)`\
+`data_empty`` ``<-`` `[`teal_data`](https://pharmaverse.github.io/teal.data/reference/teal_data.md)`(``)`\
 `data_empty`` ``# is verified`
 
     ## ✅︎ code verified
-    ## <environment: 0x55cbde5b1340> 🔒 
+    ## <environment: 0x55d8ea1ac5a8> 🔒 
     ## Parent: <environment: package:teal.data>
 
 \
@@ -52,17 +52,17 @@ the code stating that it has not passed verification.
 `data_empty`` ``# remains verified`
 
     ## ✅︎ code verified
-    ## <environment: 0x55cbdf4fa828> 🔒 
+    ## <environment: 0x55d8eb0f6410> 🔒 
     ## Parent: <environment: package:teal.data> 
     ## Bindings:
     ## - i: [data.frame]
 
 \
-`data_with_data`` ``<-`` `[`teal_data`](https://insightsengineering.github.io/teal.data/reference/teal_data.md)`(``i ``=`` `[`head`](https://rdrr.io/r/utils/head.html)`(``iris``)``, code ``=`` ``"i <- head(iris)"``)`\
+`data_with_data`` ``<-`` `[`teal_data`](https://pharmaverse.github.io/teal.data/reference/teal_data.md)`(``i ``=`` `[`head`](https://rdrr.io/r/utils/head.html)`(``iris``)``, code ``=`` ``"i <- head(iris)"``)`\
 `data_with_data`` ``# is unverified`
 
     ## ✖ code unverified
-    ## <environment: 0x55cbe01265b0> 🔒 
+    ## <environment: 0x55d8ebd25fd8> 🔒 
     ## Parent: <environment: package:teal.data> 
     ## Bindings:
     ## - i: [data.frame]
@@ -72,7 +72,7 @@ the code stating that it has not passed verification.
 `data_with_data`` ``# remains unverified`
 
     ## ✖ code unverified
-    ## <environment: 0x55cbe0bd6168> 🔒 
+    ## <environment: 0x55d8ec7d1d60> 🔒 
     ## Parent: <environment: package:teal.data> 
     ## Bindings:
     ## - i: [data.frame]
@@ -81,7 +81,7 @@ the code stating that it has not passed verification.
 
 In order to confirm that the code stored in `teal_data` exactly
 reproduces the contents of the environment, one must run the
-[`verify()`](https://insightsengineering.github.io/teal.data/reference/verify.md)
+[`verify()`](https://pharmaverse.github.io/teal.data/reference/verify.md)
 function. This causes the code to be evaluated and the results to be
 compared to the contents of the environment. If the code executes
 without errors and the results are the same as the contents already
@@ -92,22 +92,22 @@ raised.
 ##### verified
 
 \
-[`library`](https://rdrr.io/r/base/library.html)`(`[`teal.data`](https://insightsengineering.github.io/teal.data/)`)`\
+[`library`](https://rdrr.io/r/base/library.html)`(`[`teal.data`](https://pharmaverse.github.io/teal.data/)`)`\
 \
 `data`` ``<-`` `[`data.frame`](https://rdrr.io/r/base/data.frame.html)`(``x ``=`` ``11``:``20``)`\
 `data``$``id`` ``<-`` `[`seq_len`](https://rdrr.io/r/base/seq.html)`(`[`nrow`](https://rdrr.io/r/base/nrow.html)`(``data``)``)`\
 \
-`data_right`` ``<-`` `[`teal_data`](https://insightsengineering.github.io/teal.data/reference/teal_data.md)`(`\
+`data_right`` ``<-`` `[`teal_data`](https://pharmaverse.github.io/teal.data/reference/teal_data.md)`(`\
 `  data ``=`` ``data``,`\
 `  code ``=`` `[`quote`](https://rdrr.io/r/base/substitute.html)`(``{`\
 `    ``data`` ``<-`` `[`data.frame`](https://rdrr.io/r/base/data.frame.html)`(``x ``=`` ``11``:``20``)`\
 `    ``data``$``id`` ``<-`` `[`seq_len`](https://rdrr.io/r/base/seq.html)`(`[`nrow`](https://rdrr.io/r/base/nrow.html)`(``data``)``)`\
 `  ``}``)`\
 `)`` ``# is unverified`\
-`(``data_right_verified`` ``<-`` `[`verify`](https://insightsengineering.github.io/teal.data/reference/verify.md)`(``data_right``)``)`` ``# returns verified object`
+`(``data_right_verified`` ``<-`` `[`verify`](https://pharmaverse.github.io/teal.data/reference/verify.md)`(``data_right``)``)`` ``# returns verified object`
 
     ## ✅︎ code verified
-    ## <environment: 0x55cbdeeb7748> 🔒 
+    ## <environment: 0x55d8eaab32c8> 🔒 
     ## Parent: <environment: package:teal.data> 
     ## Bindings:
     ## - data: [data.frame]
@@ -115,13 +115,13 @@ raised.
 ##### unverified
 
 \
-`data_wrong`` ``<-`` `[`teal_data`](https://insightsengineering.github.io/teal.data/reference/teal_data.md)`(`\
+`data_wrong`` ``<-`` `[`teal_data`](https://pharmaverse.github.io/teal.data/reference/teal_data.md)`(`\
 `  data ``=`` ``data``,`\
 `  code ``=`` `[`quote`](https://rdrr.io/r/base/substitute.html)`(``{`\
 `    ``data`` ``<-`` `[`data.frame`](https://rdrr.io/r/base/data.frame.html)`(``x ``=`` ``11``:``20``)`\
 `  ``}``)`\
 `)`\
-[`verify`](https://insightsengineering.github.io/teal.data/reference/verify.md)`(``data_wrong``)`` ``# fails verification, raises error`
+[`verify`](https://pharmaverse.github.io/teal.data/reference/verify.md)`(``data_wrong``)`` ``# fails verification, raises error`
 
     ## Error:
     ## ! Code verification failed.
@@ -137,21 +137,21 @@ a subset of the code that only deals with some of the objects stored in
 `teal_data`.
 
 \
-[`library`](https://rdrr.io/r/base/library.html)`(`[`teal.data`](https://insightsengineering.github.io/teal.data/)`)`\
+[`library`](https://rdrr.io/r/base/library.html)`(`[`teal.data`](https://pharmaverse.github.io/teal.data/)`)`\
 \
-`data`` ``<-`` `[`within`](https://rdrr.io/r/base/with.html)`(`[`teal_data`](https://insightsengineering.github.io/teal.data/reference/teal_data.md)`(``)``, ``{`\
+`data`` ``<-`` `[`within`](https://rdrr.io/r/base/with.html)`(`[`teal_data`](https://pharmaverse.github.io/teal.data/reference/teal_data.md)`(``)``, ``{`\
 `  ``i`` ``<-`` ``iris`\
 `  ``m`` ``<-`` ``mtcars`\
 `  `[`head`](https://rdrr.io/r/utils/head.html)`(``i``)`\
 `}``)`\
-[`cat`](https://rdrr.io/r/base/cat.html)`(`[`get_code`](https://insightsengineering.github.io/teal.code/latest-tag/reference/get_code.html)`(``data``)``)`` ``# retrieve all code`
+[`cat`](https://rdrr.io/r/base/cat.html)`(`[`get_code`](https://rdrr.io/pkg/teal.code/man/get_code.html)`(``data``)``)`` ``# retrieve all code`
 
     ## i <- iris
     ## m <- mtcars
     ## head(i)
 
 \
-[`cat`](https://rdrr.io/r/base/cat.html)`(`[`get_code`](https://insightsengineering.github.io/teal.code/latest-tag/reference/get_code.html)`(``data``, names ``=`` ``"i"``)``)`` ``` # retrieve code for `i` ``
+[`cat`](https://rdrr.io/r/base/cat.html)`(`[`get_code`](https://rdrr.io/pkg/teal.code/man/get_code.html)`(``data``, names ``=`` ``"i"``)``)`` ``` # retrieve code for `i` ``
 
     ## i <- iris
 
@@ -174,6 +174,5 @@ that are required for a dataset by adding a special comment to the
 lines: `# @linksto x` will cause the line to be included when retrieving
 code for `x`.
 
-See
-[`?get_code`](https://insightsengineering.github.io/teal.code/latest-tag/reference/get_code.html)
-for a detailed explanation and examples.
+See [`?get_code`](https://rdrr.io/pkg/teal.code/man/get_code.html) for a
+detailed explanation and examples.

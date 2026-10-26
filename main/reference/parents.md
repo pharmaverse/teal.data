@@ -72,7 +72,7 @@ Each element is defined by a `list` element, where
 
 ## See also
 
-[`join_keys()`](https://insightsengineering.github.io/teal.data/reference/join_keys.md)
+[`join_keys()`](https://pharmaverse.github.io/teal.data/reference/join_keys.md)
 
 ## Examples
 

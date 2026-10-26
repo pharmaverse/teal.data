@@ -57,7 +57,7 @@
 <li class="nav-item"><form class="form-inline" role="search">
  <input class="form-control" type="search" name="search-input" id="search-input" autocomplete="off" aria-label="Search site" placeholder="Search for" data-search-index="../search.json">
 </form></li>
-<li class="nav-item"><a class="external-link nav-link" href="https://github.com/insightsengineering/teal.data" aria-label="View on Github"><span class="fa fa-github"></span></a></li>
+<li class="nav-item"><a class="external-link nav-link" href="https://github.com/pharmaverse/teal.data" aria-label="View on Github"><span class="fa fa-github"></span></a></li>
       </ul>
 </div>
 
@@ -76,7 +76,7 @@
 CoreDev</h4>
             
       
-      <small class="dont-index">Source: <a href="https://github.com/insightsengineering/teal.data/blob/main/vignettes/teal-data-reproducibility.Rmd" class="external-link"><code>vignettes/teal-data-reproducibility.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/pharmaverse/teal.data/blob/main/vignettes/teal-data-reproducibility.Rmd" class="external-link"><code>vignettes/teal-data-reproducibility.Rmd</code></a></small>
       <div class="d-none name"><code>teal-data-reproducibility.Rmd</code></div>
     </div>
 
@@ -121,18 +121,18 @@ status.</p>
 objects add a warning to the code stating that it has not passed
 verification.</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://insightsengineering.github.io/teal.data/">teal.data</a></span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://pharmaverse.github.io/teal.data/">teal.data</a></span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">data_empty</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/teal_data.html">teal_data</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="va">data_empty</span> <span class="co"># is verified</span></span></code></pre></div>
 <pre><code><span><span class="co">## ✅︎ code verified</span></span>
-<span><span class="co">## <span style="color: #0000BB; font-weight: bold;">&lt;environment: 0x55cbde5b1340&gt;</span> 🔒 </span></span>
+<span><span class="co">## <span style="color: #0000BB; font-weight: bold;">&lt;environment: 0x55d8ea1ac5a8&gt;</span> 🔒 </span></span>
 <span><span class="co">## Parent: &lt;environment: package:teal.data&gt;</span></span></code></pre>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">data_empty</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/with.html" class="external-link">within</a></span><span class="op">(</span><span class="va">data_empty</span>, <span class="va">i</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">iris</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="va">data_empty</span> <span class="co"># remains verified</span></span></code></pre></div>
 <pre><code><span><span class="co">## ✅︎ code verified</span></span>
-<span><span class="co">## <span style="color: #0000BB; font-weight: bold;">&lt;environment: 0x55cbdf4fa828&gt;</span> 🔒 </span></span>
+<span><span class="co">## <span style="color: #0000BB; font-weight: bold;">&lt;environment: 0x55d8eb0f6410&gt;</span> 🔒 </span></span>
 <span><span class="co">## Parent: &lt;environment: package:teal.data&gt; </span></span>
 <span><span class="co">## <span style="font-weight: bold;">Bindings:</span></span></span>
 <span><span class="co"><span style="font-weight: bold;">## </span>- i: [data.frame]</span></span></code></pre>
@@ -140,7 +140,7 @@ verification.</p>
 <code class="sourceCode R"><span><span class="va">data_with_data</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/teal_data.html">teal_data</a></span><span class="op">(</span>i <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">iris</span><span class="op">)</span>, code <span class="op">=</span> <span class="st">"i &lt;- head(iris)"</span><span class="op">)</span></span>
 <span><span class="va">data_with_data</span> <span class="co"># is unverified</span></span></code></pre></div>
 <pre><code><span><span class="co">## ✖ code unverified</span></span>
-<span><span class="co">## <span style="color: #0000BB; font-weight: bold;">&lt;environment: 0x55cbe01265b0&gt;</span> 🔒 </span></span>
+<span><span class="co">## <span style="color: #0000BB; font-weight: bold;">&lt;environment: 0x55d8ebd25fd8&gt;</span> 🔒 </span></span>
 <span><span class="co">## Parent: &lt;environment: package:teal.data&gt; </span></span>
 <span><span class="co">## <span style="font-weight: bold;">Bindings:</span></span></span>
 <span><span class="co"><span style="font-weight: bold;">## </span>- i: [data.frame]</span></span></code></pre>
@@ -148,7 +148,7 @@ verification.</p>
 <code class="sourceCode R"><span><span class="va">data_with_data</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/with.html" class="external-link">within</a></span><span class="op">(</span><span class="va">data_with_data</span>, <span class="va">i</span><span class="op">$</span><span class="va">rand</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sample.html" class="external-link">sample</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html" class="external-link">nrow</a></span><span class="op">(</span><span class="va">i</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="va">data_with_data</span> <span class="co"># remains unverified</span></span></code></pre></div>
 <pre><code><span><span class="co">## ✖ code unverified</span></span>
-<span><span class="co">## <span style="color: #0000BB; font-weight: bold;">&lt;environment: 0x55cbe0bd6168&gt;</span> 🔒 </span></span>
+<span><span class="co">## <span style="color: #0000BB; font-weight: bold;">&lt;environment: 0x55d8ec7d1d60&gt;</span> 🔒 </span></span>
 <span><span class="co">## Parent: &lt;environment: package:teal.data&gt; </span></span>
 <span><span class="co">## <span style="font-weight: bold;">Bindings:</span></span></span>
 <span><span class="co"><span style="font-weight: bold;">## </span>- i: [data.frame]</span></span></code></pre>
@@ -168,7 +168,7 @@ Otherwise an error will be raised.</p>
 <h5 id="verified">verified<a class="anchor" aria-label="anchor" href="#verified"></a>
 </h5>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://insightsengineering.github.io/teal.data/">teal.data</a></span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://pharmaverse.github.io/teal.data/">teal.data</a></span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">data</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html" class="external-link">data.frame</a></span><span class="op">(</span>x <span class="op">=</span> <span class="fl">11</span><span class="op">:</span><span class="fl">20</span><span class="op">)</span></span>
 <span><span class="va">data</span><span class="op">$</span><span class="va">id</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html" class="external-link">seq_len</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html" class="external-link">nrow</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span><span class="op">)</span></span>
@@ -182,7 +182,7 @@ Otherwise an error will be raised.</p>
 <span><span class="op">)</span> <span class="co"># is unverified</span></span>
 <span><span class="op">(</span><span class="va">data_right_verified</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/verify.html">verify</a></span><span class="op">(</span><span class="va">data_right</span><span class="op">)</span><span class="op">)</span> <span class="co"># returns verified object</span></span></code></pre></div>
 <pre><code><span><span class="co">## ✅︎ code verified</span></span>
-<span><span class="co">## <span style="color: #0000BB; font-weight: bold;">&lt;environment: 0x55cbdeeb7748&gt;</span> 🔒 </span></span>
+<span><span class="co">## <span style="color: #0000BB; font-weight: bold;">&lt;environment: 0x55d8eaab32c8&gt;</span> 🔒 </span></span>
 <span><span class="co">## Parent: &lt;environment: package:teal.data&gt; </span></span>
 <span><span class="co">## <span style="font-weight: bold;">Bindings:</span></span></span>
 <span><span class="co"><span style="font-weight: bold;">## </span>- data: [data.frame]</span></span></code></pre>
@@ -215,19 +215,19 @@ code but using the <code>names</code> argument allows for obtaining a
 subset of the code that only deals with some of the objects stored in
 <code>teal_data</code>.</p>
 <div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://insightsengineering.github.io/teal.data/">teal.data</a></span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://pharmaverse.github.io/teal.data/">teal.data</a></span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">data</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/with.html" class="external-link">within</a></span><span class="op">(</span><span class="fu"><a href="../reference/teal_data.html">teal_data</a></span><span class="op">(</span><span class="op">)</span>, <span class="op">{</span></span>
 <span>  <span class="va">i</span> <span class="op">&lt;-</span> <span class="va">iris</span></span>
 <span>  <span class="va">m</span> <span class="op">&lt;-</span> <span class="va">mtcars</span></span>
 <span>  <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">i</span><span class="op">)</span></span>
 <span><span class="op">}</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/cat.html" class="external-link">cat</a></span><span class="op">(</span><span class="fu"><a href="https://insightsengineering.github.io/teal.code/latest-tag/reference/get_code.html" class="external-link">get_code</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span><span class="op">)</span> <span class="co"># retrieve all code</span></span></code></pre></div>
+<span><span class="fu"><a href="https://rdrr.io/r/base/cat.html" class="external-link">cat</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/pkg/teal.code/man/get_code.html" class="external-link">get_code</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span><span class="op">)</span> <span class="co"># retrieve all code</span></span></code></pre></div>
 <pre><code><span><span class="co">## i &lt;- iris</span></span>
 <span><span class="co">## m &lt;- mtcars</span></span>
 <span><span class="co">## head(i)</span></span></code></pre>
 <div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/cat.html" class="external-link">cat</a></span><span class="op">(</span><span class="fu"><a href="https://insightsengineering.github.io/teal.code/latest-tag/reference/get_code.html" class="external-link">get_code</a></span><span class="op">(</span><span class="va">data</span>, names <span class="op">=</span> <span class="st">"i"</span><span class="op">)</span><span class="op">)</span> <span class="co"># retrieve code for `i`</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/cat.html" class="external-link">cat</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/pkg/teal.code/man/get_code.html" class="external-link">get_code</a></span><span class="op">(</span><span class="va">data</span>, names <span class="op">=</span> <span class="st">"i"</span><span class="op">)</span><span class="op">)</span> <span class="co"># retrieve code for `i`</span></span></code></pre></div>
 <pre><code><span><span class="co">## i &lt;- iris</span></span></code></pre>
 <p>Note that in when retrieving code for a specific dataset, the result
 is only the code used to <em>create</em> that dataset, not code that
@@ -250,7 +250,7 @@ that is then assigned). In such cases the code author must manually tag
 code lines that are required for a dataset by adding a special comment
 to the lines: <code># @linksto x</code> will cause the line to be
 included when retrieving code for <code>x</code>.</p>
-<p>See <code><a href="https://insightsengineering.github.io/teal.code/latest-tag/reference/get_code.html" class="external-link">?get_code</a></code> for a detailed explanation and
+<p>See <code><a href="https://rdrr.io/pkg/teal.code/man/get_code.html" class="external-link">?get_code</a></code> for a detailed explanation and
 examples.</p>
 </div>
 </div>

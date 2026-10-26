@@ -1,7 +1,7 @@
 # Reproducible data
 
 Reproducible data container class. Inherits code tracking behavior from
-[`teal.code::qenv`](https://insightsengineering.github.io/teal.code/latest-tag/reference/qenv-class.html).
+[`teal.code::qenv`](https://rdrr.io/pkg/teal.code/man/qenv-class.html).
 
 ## Details
 
@@ -23,7 +23,7 @@ returned.
   auxiliary variables. Access variables with
   [`get()`](https://rdrr.io/r/base/get.html),
   [`$`](https://rdrr.io/r/base/Extract.html),
-  [`teal.code::get_var()`](https://insightsengineering.github.io/teal.code/latest-tag/reference/get_var.html)
+  [`teal.code::get_var()`](https://rdrr.io/pkg/teal.code/man/get_var.html)
   or \[`[[`\]. No setter provided. Evaluate code to add variables into
   `@.xData`.
 
@@ -31,20 +31,20 @@ returned.
 
   (`list` of `character`) representing code necessary to reproduce the
   contents of `qenv`. Access with
-  [`teal.code::get_code()`](https://insightsengineering.github.io/teal.code/latest-tag/reference/get_code.html).
+  [`teal.code::get_code()`](https://rdrr.io/pkg/teal.code/man/get_code.html).
   No setter provided. Evaluate code to append code to the slot.
 
 - `join_keys`:
 
   (`join_keys`) object specifying joining keys for data sets in
   `@.xData`. Access or modify with
-  [`join_keys()`](https://insightsengineering.github.io/teal.data/reference/join_keys.md).
+  [`join_keys()`](https://pharmaverse.github.io/teal.data/reference/join_keys.md).
 
 - `verified`:
 
   (`logical(1)`) flag signifying that code in `@code` has been proven to
   yield contents of `@.xData`. Used internally. See
-  [`verify()`](https://insightsengineering.github.io/teal.data/reference/verify.md)
+  [`verify()`](https://pharmaverse.github.io/teal.data/reference/verify.md)
   for more details.
 
 ## Code

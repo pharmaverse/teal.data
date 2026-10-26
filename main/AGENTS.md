@@ -9,7 +9,7 @@ datasets that allow merging the different datasets.
 It provides 4 main features to the framework:
 
 - `join_keys` to show and modify relationships between datasets.
-- [`parents()`](https://insightsengineering.github.io/teal.data/reference/parents.md)
+- [`parents()`](https://pharmaverse.github.io/teal.data/reference/parents.md)
   to modify parent-child relationships.
 - `teal_data` object that extends on `qenv` API by adding API to relate
   datasets.

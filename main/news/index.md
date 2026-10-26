@@ -21,7 +21,7 @@ CRAN release: 2025-08-19
 
 - Documentation for random `CDISC` datasets was updated and placed in a
   single man page
-  ([\#367](https://github.com/insightsengineering/teal.data/issues/367)).
+  ([\#367](https://github.com/pharmaverse/teal.data/issues/367)).
 
 ## teal.data 0.7.0
 
@@ -30,10 +30,10 @@ CRAN release: 2025-01-28
 #### Breaking changes
 
 - Soft deprecate `datanames` argument of
-  [`get_code()`](https://insightsengineering.github.io/teal.code/latest-tag/reference/get_code.html).
-  Use `names` instead.
+  [`get_code()`](https://rdrr.io/pkg/teal.code/man/get_code.html). Use
+  `names` instead.
 - Soft deprecate of
-  [`datanames()`](https://insightsengineering.github.io/teal.data/reference/datanames.md).
+  [`datanames()`](https://pharmaverse.github.io/teal.data/reference/datanames.md).
   Use [`names()`](https://rdrr.io/r/base/names.html) instead.
 - Deprecate of `datanames(x) <- value`. Does nothing, replace with
   renaming the objects inside the environment.
@@ -107,9 +107,9 @@ CRAN release: 2024-01-31
 
 #### Breaking changes
 
-- [`teal_data()`](https://insightsengineering.github.io/teal.data/reference/teal_data.md)
+- [`teal_data()`](https://pharmaverse.github.io/teal.data/reference/teal_data.md)
   and
-  [`cdisc_data()`](https://insightsengineering.github.io/teal.data/reference/cdisc_data.md)
+  [`cdisc_data()`](https://pharmaverse.github.io/teal.data/reference/cdisc_data.md)
   return now `teal_data` class object which replaces `TealData` class
   object. `teal_data` becomes a standard input for the entire `teal`
   framework.
@@ -117,10 +117,10 @@ CRAN release: 2024-01-31
   have been removed. Delayed-data-loading is no longer supported by
   `teal.data`. So called connectors are now supported by `teal` package
   (see
-  [`?teal::teal_data_module`](https://insightsengineering.github.io/teal/latest-tag/reference/teal_data_module.html)).
-- [`join_keys()`](https://insightsengineering.github.io/teal.data/reference/join_keys.md)
+  [`?teal::teal_data_module`](https://rdrr.io/pkg/teal/man/teal_data_module.html)).
+- [`join_keys()`](https://pharmaverse.github.io/teal.data/reference/join_keys.md)
   and
-  [`join_key()`](https://insightsengineering.github.io/teal.data/reference/join_key.md)
+  [`join_key()`](https://pharmaverse.github.io/teal.data/reference/join_key.md)
   return now `join_keys` object which replace `JoinKeys` class.
 
 #### Miscellaneous

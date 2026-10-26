@@ -57,7 +57,7 @@
 <li class="nav-item"><form class="form-inline" role="search">
  <input class="form-control" type="search" name="search-input" id="search-input" autocomplete="off" aria-label="Search site" placeholder="Search for" data-search-index="../search.json">
 </form></li>
-<li class="nav-item"><a class="external-link nav-link" href="https://github.com/insightsengineering/teal.data" aria-label="View on Github"><span class="fa fa-github"></span></a></li>
+<li class="nav-item"><a class="external-link nav-link" href="https://github.com/pharmaverse/teal.data" aria-label="View on Github"><span class="fa fa-github"></span></a></li>
       </ul>
 </div>
 
@@ -76,7 +76,7 @@
 CoreDev</h4>
             
       
-      <small class="dont-index">Source: <a href="https://github.com/insightsengineering/teal.data/blob/main/vignettes/join-keys.Rmd" class="external-link"><code>vignettes/join-keys.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/pharmaverse/teal.data/blob/main/vignettes/join-keys.Rmd" class="external-link"><code>vignettes/join-keys.Rmd</code></a></small>
       <div class="d-none name"><code>join-keys.Rmd</code></div>
     </div>
 
@@ -102,9 +102,9 @@ for details on using this object to select specific datasets.</p>
 applications<a class="anchor" aria-label="anchor" href="#uses-of-join_keys-class-in-teal-applications"></a>
 </h5>
 <p>The primary function of the <code>join_keys</code> class in
-<code>teal</code> applications is to facilitate the seamless <a href="https://insightsengineering.github.io/teal.transform/latest-tag/articles/data-merge.html" class="external-link">merging
+<code>teal</code> applications is to facilitate the seamless <a href="https://pharmaverse.github.io/teal.transform/latest-tag/articles/data-merge.html" class="external-link">merging
 of datasets</a> using <code>teal.transform</code>.</p>
-<p>Additionally, it plays a role in the data filtering using the <em><a href="https://insightsengineering.github.io/teal/latest-tag/articles/filter-panel.html" class="external-link">Filter
+<p>Additionally, it plays a role in the data filtering using the <em><a href="https://pharmaverse.github.io/teal/latest-tag/articles/filter-panel.html" class="external-link">Filter
 Panel</a></em> in a <code>teal</code> application. The filters applied
 to a (parent) dataset are also applied to their children.</p>
 </div>
@@ -167,7 +167,7 @@ as the parent.</p>
 <h5 id="example-output">Example &amp; Output<a class="anchor" aria-label="anchor" href="#example-output"></a>
 </h5>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://insightsengineering.github.io/teal.data/">teal.data</a></span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://pharmaverse.github.io/teal.data/">teal.data</a></span><span class="op">)</span></span>
 <span><span class="va">jk</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/join_keys.html">join_keys</a></span><span class="op">(</span></span>
 <span>  <span class="fu"><a href="../reference/join_key.html">join_key</a></span><span class="op">(</span><span class="st">"ds1"</span>, keys <span class="op">=</span> <span class="st">"col_1"</span><span class="op">)</span>, <span class="co"># ds1: [col_1]</span></span>
 <span>  <span class="fu"><a href="../reference/join_key.html">join_key</a></span><span class="op">(</span><span class="st">"ds2"</span>, keys <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"col_1"</span>, <span class="st">"col_2"</span><span class="op">)</span><span class="op">)</span>, <span class="co"># ds2: [col_1, col_2]</span></span>
@@ -411,7 +411,7 @@ to define the join keys is to use the <code>join_keys</code> argument.
 We can specify the column(s) of the dataset that (together) uniquely
 identify rows in the dataset.</p>
 <div class="sourceCode" id="cb25"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://insightsengineering.github.io/teal.data/">teal.data</a></span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://pharmaverse.github.io/teal.data/">teal.data</a></span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">td_pk</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/with.html" class="external-link">within</a></span><span class="op">(</span></span>
 <span>  <span class="fu"><a href="../reference/teal_data.html">teal_data</a></span><span class="op">(</span><span class="op">)</span>,</span>
@@ -456,7 +456,7 @@ not as strict as <code>SQL</code> foreign key relationships as
 foreign key columns are present in the table.</p>
 <p>For example:</p>
 <div class="sourceCode" id="cb29"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://insightsengineering.github.io/teal.data/">teal.data</a></span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://pharmaverse.github.io/teal.data/">teal.data</a></span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">td_fk</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/with.html" class="external-link">within</a></span><span class="op">(</span></span>
 <span>  <span class="fu"><a href="../reference/teal_data.html">teal_data</a></span><span class="op">(</span><span class="op">)</span>,</span>
@@ -499,7 +499,7 @@ and overwritten just as any other foreign key.</p>
 <p>These implicit relationships can be used to merge 2 datasets
 together, just as if they were defined manually.</p>
 <div class="sourceCode" id="cb31"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://insightsengineering.github.io/teal.data/">teal.data</a></span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://pharmaverse.github.io/teal.data/">teal.data</a></span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">td</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/with.html" class="external-link">within</a></span><span class="op">(</span></span>
 <span>  <span class="fu"><a href="../reference/teal_data.html">teal_data</a></span><span class="op">(</span><span class="op">)</span>,</span>

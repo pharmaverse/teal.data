@@ -10,35 +10,35 @@ Downloads](http://cranlogs.r-pkg.org/badges/last-month/teal.data?color=green)](h
 Downloads](http://cranlogs.r-pkg.org/badges/last-week/teal.data?color=green)](https://cran.r-project.org/package=teal.data)
 
 [![Check
-🛠](https://github.com/insightsengineering/teal.data/actions/workflows/check.yaml/badge.svg)](https://insightsengineering.github.io/teal.data/main/unit-test-report/)
+🛠](https://github.com/pharmaverse/teal.data/actions/workflows/check.yaml/badge.svg)](https://pharmaverse.github.io/teal.data/main/unit-test-report/)
 [![Docs
-📚](https://github.com/insightsengineering/teal.data/actions/workflows/docs.yaml/badge.svg)](https://insightsengineering.github.io/teal.data/)
+📚](https://github.com/pharmaverse/teal.data/actions/workflows/docs.yaml/badge.svg)](https://pharmaverse.github.io/teal.data/)
 [![Code Coverage
-📔](https://raw.githubusercontent.com/insightsengineering/teal.data/_xml_coverage_reports/data/main/badge.svg)](https://insightsengineering.github.io/teal.data/main/coverage-report/)
+📔](https://raw.githubusercontent.com/pharmaverse/teal.data/_xml_coverage_reports/data/main/badge.svg)](https://pharmaverse.github.io/teal.data/main/coverage-report/)
 
 ![GitHub
-forks](https://img.shields.io/github/forks/insightsengineering/teal.data?style=social)![GitHub
+forks](https://img.shields.io/github/forks/pharmaverse/teal.data?style=social)![GitHub
 repo
-stars](https://img.shields.io/github/stars/insightsengineering/teal.data?style=social)
+stars](https://img.shields.io/github/stars/pharmaverse/teal.data?style=social)
 
 ![GitHub commit
-activity](https://img.shields.io/github/commit-activity/m/insightsengineering/teal.data)![GitHub
-contributors](https://img.shields.io/github/contributors/insightsengineering/teal.data)![GitHub
+activity](https://img.shields.io/github/commit-activity/m/pharmaverse/teal.data)![GitHub
+contributors](https://img.shields.io/github/contributors/pharmaverse/teal.data)![GitHub
 last
-commit](https://img.shields.io/github/last-commit/insightsengineering/teal.data)![GitHub
+commit](https://img.shields.io/github/last-commit/pharmaverse/teal.data)![GitHub
 pull
-requests](https://img.shields.io/github/issues-pr/insightsengineering/teal.data)![GitHub
+requests](https://img.shields.io/github/issues-pr/pharmaverse/teal.data)![GitHub
 repo
-size](https://img.shields.io/github/repo-size/insightsengineering/teal.data)![GitHub
+size](https://img.shields.io/github/repo-size/pharmaverse/teal.data)![GitHub
 language
-count](https://img.shields.io/github/languages/count/insightsengineering/teal.data)[![Project
+count](https://img.shields.io/github/languages/count/pharmaverse/teal.data)[![Project
 Status: Active – The project has reached a stable, usable state and is
 being actively
 developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![Current
-Version](https://img.shields.io/github/r-package/v/insightsengineering/teal.data/main?color=purple&label=package%20version)](https://github.com/insightsengineering/teal.data/tree/main)
+Version](https://img.shields.io/github/r-package/v/pharmaverse/teal.data/main?color=purple&label=package%20version)](https://github.com/pharmaverse/teal.data/tree/main)
 [![Open
-Issues](https://img.shields.io/github/issues-raw/insightsengineering/teal.data?color=red&label=open%20issues)](https://github.com/insightsengineering/teal.data/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc)
+Issues](https://img.shields.io/github/issues-raw/pharmaverse/teal.data?color=red&label=open%20issues)](https://github.com/pharmaverse/teal.data/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc)
 
 This package is used to create the data needed for `teal` applications.
 This data can be:
@@ -64,60 +64,60 @@ Alternatively, you might want to use the development version.
 
 \
 `# install.packages("pak")`\
-`pak``::`[`pak`](https://pak.r-lib.org/reference/pak.html)`(``"insightsengineering/teal.data"``)`
+`pak``::`[`pak`](https://pak.r-lib.org/reference/pak.html)`(``"pharmaverse/teal.data"``)`
 
 ## Usage
 
 To understand how to use this package, please refer to the [Introduction
 to
-`teal.data`](https://insightsengineering.github.io/teal.data/latest-tag/articles/teal-data.html)
+`teal.data`](https://pharmaverse.github.io/teal.data/latest-tag/articles/teal-data.html)
 article, which provides multiple examples of code implementation.
 
 Below is the showcase of the example usage.
 
 \
-[`library`](https://rdrr.io/r/base/library.html)`(`[`teal.data`](https://insightsengineering.github.io/teal.data/)`)`
+[`library`](https://rdrr.io/r/base/library.html)`(`[`teal.data`](https://pharmaverse.github.io/teal.data/)`)`
 
 \
 `# quick start for clinical trial data`\
-`my_data`` ``<-`` `[`cdisc_data`](https://insightsengineering.github.io/teal.data/reference/cdisc_data.md)`(`\
-`  ADSL ``=`` `[`example_cdisc_data`](https://insightsengineering.github.io/teal.data/reference/example_cdisc_data.md)`(``"ADSL"``)``,`\
-`  ADTTE ``=`` `[`example_cdisc_data`](https://insightsengineering.github.io/teal.data/reference/example_cdisc_data.md)`(``"ADTTE"``)``,`\
+`my_data`` ``<-`` `[`cdisc_data`](https://pharmaverse.github.io/teal.data/reference/cdisc_data.md)`(`\
+`  ADSL ``=`` `[`example_cdisc_data`](https://pharmaverse.github.io/teal.data/reference/example_cdisc_data.md)`(``"ADSL"``)``,`\
+`  ADTTE ``=`` `[`example_cdisc_data`](https://pharmaverse.github.io/teal.data/reference/example_cdisc_data.md)`(``"ADTTE"``)``,`\
 `  code ``=`` `[`quote`](https://rdrr.io/r/base/substitute.html)`(``{`\
-`    ``ADSL`` ``<-`` `[`example_cdisc_data`](https://insightsengineering.github.io/teal.data/reference/example_cdisc_data.md)`(``"ADSL"``)`\
-`    ``ADTTE`` ``<-`` `[`example_cdisc_data`](https://insightsengineering.github.io/teal.data/reference/example_cdisc_data.md)`(``"ADTTE"``)`\
+`    ``ADSL`` ``<-`` `[`example_cdisc_data`](https://pharmaverse.github.io/teal.data/reference/example_cdisc_data.md)`(``"ADSL"``)`\
+`    ``ADTTE`` ``<-`` `[`example_cdisc_data`](https://pharmaverse.github.io/teal.data/reference/example_cdisc_data.md)`(``"ADTTE"``)`\
 `  ``}``)`\
 `)`\
 \
 `# or`\
 \
-`my_data`` ``<-`` `[`within`](https://rdrr.io/r/base/with.html)`(`[`teal_data`](https://insightsengineering.github.io/teal.data/reference/teal_data.md)`(``)``, ``{`\
-`  ``ADSL`` ``<-`` `[`example_cdisc_data`](https://insightsengineering.github.io/teal.data/reference/example_cdisc_data.md)`(``"ADSL"``)`\
-`  ``ADTTE`` ``<-`` `[`example_cdisc_data`](https://insightsengineering.github.io/teal.data/reference/example_cdisc_data.md)`(``"ADTTE"``)`\
+`my_data`` ``<-`` `[`within`](https://rdrr.io/r/base/with.html)`(`[`teal_data`](https://pharmaverse.github.io/teal.data/reference/teal_data.md)`(``)``, ``{`\
+`  ``ADSL`` ``<-`` `[`example_cdisc_data`](https://pharmaverse.github.io/teal.data/reference/example_cdisc_data.md)`(``"ADSL"``)`\
+`  ``ADTTE`` ``<-`` `[`example_cdisc_data`](https://pharmaverse.github.io/teal.data/reference/example_cdisc_data.md)`(``"ADTTE"``)`\
 `}``)`\
 `datanames`` ``<-`` `[`c`](https://rdrr.io/r/base/c.html)`(``"ADSL"``, ``"ADTTE"``)`\
-[`datanames`](https://insightsengineering.github.io/teal.data/reference/datanames.md)`(``my_data``)`` ``<-`` ``datanames`\
-[`join_keys`](https://insightsengineering.github.io/teal.data/reference/join_keys.md)`(``my_data``)`` ``<-`` ``default_cdisc_join_keys``[``datanames``]`
+[`datanames`](https://pharmaverse.github.io/teal.data/reference/datanames.md)`(``my_data``)`` ``<-`` ``datanames`\
+[`join_keys`](https://pharmaverse.github.io/teal.data/reference/join_keys.md)`(``my_data``)`` ``<-`` ``default_cdisc_join_keys``[``datanames``]`
 
 \
 `# quick start for general data`\
-`my_general_data`` ``<-`` `[`within`](https://rdrr.io/r/base/with.html)`(`[`teal_data`](https://insightsengineering.github.io/teal.data/reference/teal_data.md)`(``)``, ``{`\
+`my_general_data`` ``<-`` `[`within`](https://rdrr.io/r/base/with.html)`(`[`teal_data`](https://pharmaverse.github.io/teal.data/reference/teal_data.md)`(``)``, ``{`\
 `  ``iris`` ``<-`` ``iris`\
 `  ``mtcars`` ``<-`` ``mtcars`\
 `}``)`
 
 \
 `# reproducibility check`\
-`data`` ``<-`` `[`teal_data`](https://insightsengineering.github.io/teal.data/reference/teal_data.md)`(``iris ``=`` ``iris``, code ``=`` ``"iris <- mtcars"``)`\
-[`verify`](https://insightsengineering.github.io/teal.data/reference/verify.md)`(``data``)`\
+`data`` ``<-`` `[`teal_data`](https://pharmaverse.github.io/teal.data/reference/teal_data.md)`(``iris ``=`` ``iris``, code ``=`` ``"iris <- mtcars"``)`\
+[`verify`](https://pharmaverse.github.io/teal.data/reference/verify.md)`(``data``)`\
 `#> Error: Code verification failed.`\
 `#>  Object(s) recreated with code that have different structure in data:`\
 `#>  • iris`
 
 \
 `# code extraction`\
-`iris2_data`` ``<-`` `[`within`](https://rdrr.io/r/base/with.html)`(`[`teal_data`](https://insightsengineering.github.io/teal.data/reference/teal_data.md)`(``)``, ``{``iris2`` ``<-`` ``iris``[``1``:``6``, ``]``}``)`\
-[`get_code`](https://insightsengineering.github.io/teal.code/latest-tag/reference/get_code.html)`(``iris2_data``)`\
+`iris2_data`` ``<-`` `[`within`](https://rdrr.io/r/base/with.html)`(`[`teal_data`](https://pharmaverse.github.io/teal.data/reference/teal_data.md)`(``)``, ``{``iris2`` ``<-`` ``iris``[``1``:``6``, ``]``}``)`\
+[`get_code`](https://rdrr.io/pkg/teal.code/man/get_code.html)`(``iris2_data``)`\
 `#> "iris2 <- iris[1:6, ]"`
 
 ## Getting help

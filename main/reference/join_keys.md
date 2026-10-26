@@ -139,13 +139,13 @@ print(x, ...)
 
 ## See also
 
-[`join_key()`](https://insightsengineering.github.io/teal.data/reference/join_key.md)
+[`join_key()`](https://pharmaverse.github.io/teal.data/reference/join_key.md)
 for creating `join_keys_set`,
-[`parents()`](https://insightsengineering.github.io/teal.data/reference/parents.md)
+[`parents()`](https://pharmaverse.github.io/teal.data/reference/parents.md)
 for parent operations,
-[`teal_data()`](https://insightsengineering.github.io/teal.data/reference/teal_data.md)
+[`teal_data()`](https://pharmaverse.github.io/teal.data/reference/teal_data.md)
 for `teal_data` constructor *and*
-[default_cdisc_join_keys](https://insightsengineering.github.io/teal.data/reference/default_cdisc_join_keys.md)
+[default_cdisc_join_keys](https://pharmaverse.github.io/teal.data/reference/default_cdisc_join_keys.md)
 for default CDISC keys.
 
 ## Examples

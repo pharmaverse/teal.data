@@ -44,8 +44,8 @@ object of class `join_key_set` to be passed into `join_keys` function.
 
 ## See also
 
-[`join_keys()`](https://insightsengineering.github.io/teal.data/reference/join_keys.md),
-[`parents()`](https://insightsengineering.github.io/teal.data/reference/parents.md)
+[`join_keys()`](https://pharmaverse.github.io/teal.data/reference/join_keys.md),
+[`parents()`](https://pharmaverse.github.io/teal.data/reference/parents.md)
 
 ## Examples
 
