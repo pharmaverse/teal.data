@@ -28,7 +28,7 @@ Authors:
   \item Dawid Kaledkowski \email{dawid.kaledkowski@roche.com} (\href{https://orcid.org/0000-0001-9533-457X}{ORCID})
   \item Aleksander Chlebowski \email{aleksander.chlebowski@contractors.roche.com} (\href{https://orcid.org/0000-0001-5018-6294}{ORCID})
   \item Marcin Kosinski \email{marcin.kosinski.mk1@roche.com}
-  \item Andre Verissimo \email{andre.verissimo@roche.com} (\href{https://orcid.org/0000-0002-2212-339X}{ORCID})
+  \item Andre Verissimo \email{andre.verissimo@appsilon.com} (\href{https://orcid.org/0000-0002-2212-339X}{ORCID})
   \item Pawel Rucki \email{pawel.rucki@roche.com}
   \item Mahmoud Hallal \email{mahmoud.hallal@roche.com}
   \item Nikolas Burkoff
@@ -41,6 +41,7 @@ Other contributors:
 \itemize{
   \item Chendi Liao \email{chendi.liao@roche.com} [reviewer]
   \item F. Hoffmann-La Roche AG [copyright holder, funder]
+  \item Appsilon Sp. z o.o. \email{teal@appsilon.com} [copyright holder, funder]
 }
 
 }
