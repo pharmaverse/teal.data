@@ -24,17 +24,17 @@ Input `teal_data` object.
 ``` r
 teal_data()
 #> ✅︎ code verified
-#> <environment: 0x557fbac635d0> 🔒 
+#> <environment: 0x55a1e3122b78> 🔒 
 #> Parent: <environment: devtools_shims> 
 teal_data(x = iris, code = "x = iris")
 #> ✖ code unverified
-#> <environment: 0x557fb9440880> 🔒 
+#> <environment: 0x55a1e3d72030> 🔒 
 #> Parent: <environment: devtools_shims> 
 #> Bindings:
 #> - x: [data.frame]
 verify(teal_data(x = iris, code = "x = iris"))
 #> ✅︎ code verified
-#> <environment: 0x557fbd99be08> 🔒 
+#> <environment: 0x55a1e3cc43a0> 🔒 
 #> Parent: <environment: devtools_shims> 
 #> Bindings:
 #> - x: [data.frame]

@@ -2,6 +2,14 @@
 
 ## teal.data 0.8.1.9001
 
+#### Miscellaneous
+
+- teal.data has moved to the pharmaverse GitHub organisation:
+  <https://github.com/pharmaverse/teal.data>.
+- Appsilon becomes a core contributor and joins F. Hoffmann-La Roche AG
+  as a copyright holder of teal.data, working alongside the wider
+  contributor community.
+
 ## teal.data 0.8.1
 
 CRAN release: 2026-06-29

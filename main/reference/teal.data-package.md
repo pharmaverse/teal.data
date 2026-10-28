@@ -29,7 +29,7 @@ Authors:
 
 - Marcin Kosinski <marcin.kosinski.mk1@roche.com>
 
-- Andre Verissimo <andre.verissimo@roche.com>
+- Andre Verissimo <andre.verissimo@appsilon.com>
   ([ORCID](https://orcid.org/0000-0002-2212-339X))
 
 - Pawel Rucki <pawel.rucki@roche.com>
@@ -49,3 +49,5 @@ Other contributors:
 - Chendi Liao <chendi.liao@roche.com> \[reviewer\]
 
 - F. Hoffmann-La Roche AG \[copyright holder, funder\]
+
+- Appsilon Sp. z o.o. <teal@appsilon.com> \[copyright holder, funder\]
