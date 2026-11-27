@@ -73,6 +73,7 @@ Collate:
     'join_keys-utils.R'
     'join_keys.R'
     'teal.data.R'
+    'teal_data-c.R'
     'teal_data-class.R'
     'teal_data-constructor.R'
     'teal_data-extract.R'
